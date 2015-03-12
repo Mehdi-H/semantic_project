@@ -1,11 +1,30 @@
+@import "compass/css3/box-sizing";
+
+@mixin font-smoothing($val: antialiased) {
+  -webkit-font-smoothing: $val;
+  -moz-font-smoothing: $val;
+  -ms-font-smoothing: $val;
+  -o-font-smoothing: $val;
+}
 
 $menuLength      : 1024px;
-$mobile_maxWidth : 630px;
+$mobile_maxWidth : 480px;
+$grey            : #eee;
 
 body{
 	margin: 0;
 	padding: 0;
-	font-family: "helvetica", arial;
+	width: 100%;	
+	height: 100%;	
+	font-family: Roboto;
+	@include font-smoothing(antialiased);
+	font-weight: 200;
+}
+
+#header{
+	position: relative;
+	overflow: hidden;	
+	padding-bottom: 20px;	
 }
 
 #mainHead{
@@ -28,6 +47,27 @@ body{
 
 #m_btn{
 	display: none;
+}
+
+#footer{
+	background: $grey;
+	border-top: 1px solid darken($grey,50%);
+	width: 100%;
+	clear: both;
+	float: left;
+	overflow: hidden;
+	padding: 20px 20px;
+	@include box-sizing(border-box);
+	color: #666;
+
+	a.item{
+		font-weight: bold;
+		text-decoration: none;
+		color: #666;
+	}
+	a:hover{
+		color:orange;
+	}
 }
 
 // mobile responsive

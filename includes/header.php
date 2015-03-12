@@ -3,7 +3,7 @@
  * @Author: Mehdi-H
  * @Date:   2015-03-12 13:09:37
  * @Last Modified by:   Mehdi-H
- * @Last Modified time: 2015-03-12 15:45:10
+ * @Last Modified time: 2015-03-12 22:20:18
  */
 ?>
 
@@ -25,6 +25,8 @@
 		Contact
 	</a>
 </div>
+
+<div id="header">	
 
 <div id="mainHead">	
 	<div id="menu" class="ui fluid four item pointing menu inverted">
@@ -56,5 +58,4 @@
 </div>
 
 <img id="mainImage" src="images/bg.jpg" alt="bg">
-
-
+</div>

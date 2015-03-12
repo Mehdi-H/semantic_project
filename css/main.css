@@ -1,7 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "helvetica", arial; }
+  width: 100%;
+  height: 100%;
+  font-family: Roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-weight: 200; }
+
+#header {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px; }
 
 #mainHead {
   margin: 40px 40px 0px 40px;
@@ -21,7 +33,26 @@ body {
 #m_btn {
   display: none; }
 
-@media all and (max-width: 630px) {
+#footer {
+  background: #eee;
+  border-top: 1px solid #6e6e6e;
+  width: 100%;
+  clear: both;
+  float: left;
+  overflow: hidden;
+  padding: 20px 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #666; }
+  #footer a.item {
+    font-weight: bold;
+    text-decoration: none;
+    color: #666; }
+  #footer a:hover {
+    color: orange; }
+
+@media all and (max-width: 480px) {
   #menu {
     display: none; }
 
@@ -34,7 +65,7 @@ body {
 
   #mainHead .ui.icon.header.huge {
     display: none; } }
-@media all and (min-width: 631px) {
+@media all and (min-width: 481px) {
   html body.pushed {
     margin-left: 0 !important; }
 
